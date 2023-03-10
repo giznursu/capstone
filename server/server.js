@@ -5,11 +5,11 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const{ getAllBronzers, deleteBronzer , reviewProduct} = require('./controller')
+const{ getAllBronzers, deleteBronzer , reviewProduct } = require('./controller')
 
 app.get('/api/bronzerproducts',getAllBronzers)
 app.delete('/api/bronzerproducts/:id',deleteBronzer)
-app.put('/api/bronzerproducts/:id',reviewProduct)
+app.post('/api/bronzerproducts',reviewProduct)
 
 
 
