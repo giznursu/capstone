@@ -5,11 +5,17 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const{ getAllBronzers, deleteBronzer , reviewProduct } = require('./controller')
+const{ getAllBronzers, deleteBronzer, createBronzer,getAllConcealers, deleteConcealer,createConcealer,getAllLipgloss,deleteLipgloss} = require('./controller')
 
 app.get('/api/bronzerproducts',getAllBronzers)
 app.delete('/api/bronzerproducts/:id',deleteBronzer)
-app.post('/api/bronzerproducts',reviewProduct)
+app.post('/api/bronzerproducts',createBronzer)
+app.get('/api/concealerproducts',getAllConcealers)
+app.delete('/api/concealerproducts/:id',deleteConcealer)
+app.post('/api/concealerproducts',createConcealer)
+app.get('/api/lipglossproducts',getAllLipgloss)
+app.delete('/api/lipglossproducts/:id',deleteLipgloss)
+
 
 
 

@@ -1,0 +1,100 @@
+[
+  
+    {
+        "id" : 1,
+        "category" : "Lipgloss",
+        "brand" : "HERMES",
+        "name": "Hermesistible, Infused Care Oil",
+        "color": "01-Beige Sapotille",
+        "img" : "https://assets.hermes.com/is/image/hermesproduct/hermesistible-infused-care-oil-beige-sapotille--60346HV001-worn-1-0-0-800-800_g.jpg"
+       
+    },
+    {
+        "id" : 2,
+        "category" : "Lipgloss",
+        "brand" : "HERMES",
+        "name": "Hermesistible, Infused Care Oil",
+        "color": " 02-Corail Bigarade",
+        "img" : "https://assets.hermes.com/is/image/hermesproduct/hermesistible-infused-care-oil-corail-bigarade--60346HV002-worn-1-0-0-800-800_g.jpg"
+       
+    },
+    {
+        "id" : 3,
+        "category" : "Lipgloss",
+        "brand" : "HERMES",
+        "name": "Hermesistible, Infused Care Oil",
+        "color": "03-Rose Pitaya",
+        "img" :"https://assets.hermes.com/is/image/hermesproduct/hermesistible-infused-care-oil-rose-pitaya--60346HV003-worn-1-0-0-800-800_g.jpg"
+        
+    },
+    {
+        "id" : 4,
+        "category" : "Lipgloss",
+        "brand" : "HERMES",
+        "name": "Hermesistible, Infused Care Oil",
+        "color": "04-Rouge Amarelle",
+        "img": "https://assets.hermes.com/is/image/hermesproduct/hermesistible-infused-care-oil-rouge-amarelle--60346HV004-worn-1-0-0-800-800_g.jpg"
+        
+    },
+    {
+        "id" : 5,
+        "category" : "Lipgloss",
+        "brand" : "HERMES",
+        "name": "Hermesistible, Infused Care Oil",
+        "color": "06-Pourpre Camarine",
+        "img": "https://assets.hermes.com/is/image/hermesproduct/hermesistible-infused-care-oil-pourpre-camarine--60346HV006-worn-1-0-0-800-800_g.jpg"
+        
+    },
+    {
+        "id" : 6,
+        "category" : "Lipgloss",
+        "brand" : "YSL",
+        "name": "ROUGE VOLUPTÉ SHINE LIPSTICK BALM",
+        "color": "09 Nude Sheer",
+        "img" : "https://www.yslbeautyus.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-ysl-master-catalog/default/dwcc323dda/images/62510YSL/3365440197831.jpg?sw=930&sh=930&sm=cut&sfrm=jpg&q=85t"
+        
+    },
+    {
+        "id" :7 ,
+        "category" : "Lipgloss",
+        "brand" : "YSL",
+        "name": "ROUGE VOLUPTÉ SHINE LIPSTICK BALM",
+        "color": "12 Corail Dolman",
+        "img":"https://www.yslbeautyus.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-ysl-master-catalog/default/dwfb2ad692/images/62510YSL/3365440198043.jpg?sw=930&sh=930&sm=cut&sfrm=jpg&q=85"
+        
+    },
+    {   "id" :8,
+        "category" : "Lipgloss",
+        "brand" : "YSL",
+        "name": "ROUGE VOLUPTÉ SHINE LIPSTICK BALM",
+        "color": "15 Corail Spontini",
+        "img":"https://www.yslbeautyus.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-ysl-master-catalog/default/dw34100322/images/62510YSL/3365440237681.jpg?sw=930&sh=930&sm=cut&sfrm=jpg&q=85"
+        
+    },
+    {   "id" :9,
+        "category" : "Lipgloss",
+        "brand" : "YSL",
+        "name": "ROUGE VOLUPTÉ SHINE LIPSTICK BALM",
+        "color": "16 Orange Majorelle",
+        "img":"https://www.yslbeautyus.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-ysl-master-catalog/default/dw7f538aff/images/62510YSL/3365440562141.jpg?sw=930&sh=930&sm=cut&sfrm=jpg&q=85"
+    
+    },
+    {   "id" :10,
+        "category" : "Lipgloss",
+        "brand" : "YSL",
+        "name": "ROUGE VOLUPTÉ SHINE LIPSTICK BALM",
+        "color": "44 Nude Lavalliere",
+        "img":"https://www.yslbeautyus.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-ysl-master-catalog/default/dw48e1abc7/images/62510YSL/3614271280244.jpg?sw=930&sh=930&sm=cut&sfrm=jpg&q=85"
+
+    },
+    {   "id" :11,
+        "category" : "Lipgloss",
+        "brand" : "YSL",
+        "name": "ROUGE VOLUPTÉ SHINE LIPSTICK BALM",
+        "color": "45 Rouge Tuxedo",
+        "img":"https://www.yslbeautyus.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-ysl-master-catalog/default/dw6d48bad5/images/62510YSL/3614271280268.jpg?sw=930&sh=930&sm=cut&sfrm=jpg&q=85"
+
+    }
+
+    
+]

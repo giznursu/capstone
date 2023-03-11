@@ -1,0 +1,92 @@
+[
+  
+    {
+        "id" : 1,
+        "category" : "Concealer",
+        "brand" : "DIOR",
+        "name": "BACKSTAGE FLASH PERFECTOR CONCEALER",
+        "color": "0CR Cool Rosy",
+        "img" : "https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw9e2bb71c/assets/Y0262001/Y0262001_C026200002_E01_GHC.jpg?sw=715&sh=773&sm=fit&imwidth=800"
+       
+    },
+    {
+        "id" : 2,
+        "category" : "Concealer",
+        "brand" : "DIOR",
+        "name": "BACKSTAGE FLASH PERFECTOR CONCEALER",
+        "color": "0W Warm",
+        "img" : "https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwe68244fd/assets/Y0262001/Y0262001_C026200001_E01_GHC.jpg?sw=715&sh=773&sm=fit&imwidth=800"
+       
+    },
+    {
+        "id" : 3,
+        "category" : "Concealer",
+        "brand" : "DIOR",
+        "name": "BACKSTAGE FLASH PERFECTOR CONCEALER",
+        "color": "4W Warm",
+        "img" :"https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw04bf0d2d/assets/Y0262001/Y0262001_C026200041_E01_GHC.jpg?sw=715&sh=773&sm=fit&imwidth=800"
+        
+    },
+    {
+        "id" : 4,
+        "category" : "Concealer",
+        "brand" : "DIOR",
+        "name": "BACKSTAGE FLASH PERFECTOR CONCEALER",
+        "color": "4C Cool",
+        "img": "https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw00fef163/assets/Y0262001/Y0262001_C026200044_E01_GHC.jpg?sw=715&sh=773&sm=fit&imwidth=800"
+        
+    },
+    {
+        "id" : 5,
+        "category" : "Concealer",
+        "brand" : "DIOR",
+        "name": "BACKSTAGE FLASH PERFECTOR CONCEALER",
+        "color": "3N Neutral",
+        "img": "https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwd155dd92/assets/Y0262001/Y0262001_C026200030_E01_GHC.jpg?sw=715&sh=773&sm=fit&imwidth=800"
+        
+    },
+    {
+        "id" : 6,
+        "category" : "Concealer",
+        "brand" : "TARTE",
+        "name": "Shape Tape",
+        "color": "60H Mahogany Honey",
+        "img" : "https://tartecosmetics.com/dw/image/v2/BBPW_PRD/on/demandware.static/-/Sites-master-catalog-tarte/default/dwd863ea14/836/RECTANGLE_MAIN/836-shape-tape-concealer-60H-mahogany-honey-MAIN2-0.jpg?sw=610&sh=1024&sm=fit"
+        
+    },
+    {
+        "id" :7 ,
+        "category" : "Concealer",
+        "brand" : "TARTE",
+        "name": "Shape Tape",
+        "color": "53N Deep",
+        "img":"https://tartecosmetics.com/dw/image/v2/BBPW_PRD/on/demandware.static/-/Sites-master-catalog-tarte/default/dw4009991f/836/RECTANGLE_MAIN/836-shape-tape-concealer-53N-deep-MAIN2-0.jpg?sw=610&sh=1024&sm=fit"
+        
+    },
+    {   "id" :8,
+        "category" : "Concealer",
+        "brand" : "TARTE",
+        "name": "Shape Tape",
+        "color": "44H Tan",
+        "img":"https://tartecosmetics.com/dw/image/v2/BBPW_PRD/on/demandware.static/-/Sites-master-catalog-tarte/default/dw8a18a343/836/RECTANGLE_MAIN/836-shape-tape-concealer-44H-tan-MAIN2-0.jpg?sw=610&sh=1024&sm=fit"
+        
+    },
+    {   "id" :9,
+        "category" : "Concealer",
+        "brand" : "TARTE",
+        "name": "Shape Tape",
+        "color": "36S Medium-Tan Sand",
+        "img":"https://tartecosmetics.com/dw/image/v2/BBPW_PRD/on/demandware.static/-/Sites-master-catalog-tarte/default/dwb4345af7/836/RECTANGLE_MAIN/836-shape-tape-concealer-36S-mdm-tan-sand-MAIN2-0.jpg?sw=610&sh=1024&sm=fit"
+    
+    },
+    {   "id" :10,
+        "category" : "Concealer",
+        "brand" : "TARTE",
+        "name": "Shape Tape",
+        "color": "22N Light Neutral",
+        "img":"https://tartecosmetics.com/dw/image/v2/BBPW_PRD/on/demandware.static/-/Sites-master-catalog-tarte/default/dw7ca83a93/836/RECTANGLE_MAIN/836-shape-tape-concealer-22N-lght-ntrl-MAIN2-0.jpg?sw=610&sh=1024&sm=fit"
+
+    }
+
+    
+]
