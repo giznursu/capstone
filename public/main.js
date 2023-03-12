@@ -2,6 +2,7 @@ const bronzerContainer = document.querySelector("#bronzer-container")
 const concealerContainer = document.querySelector("#concealer-container")
 const lipglossContainer = document.querySelector("#lipgloss-container")
 
+
 const form1 = document.querySelector('.bronzerform')
 const form2 = document.querySelector('.concealerform')
 const form3 = document.querySelector(".lipglossform")
@@ -9,6 +10,9 @@ const form3 = document.querySelector(".lipglossform")
 const bronzerbtn = document.querySelector("#first") 
 const concealerbtn = document.querySelector("#second")
 const lipglossbtn = document.querySelector("#third")
+const closeBronzer = document.querySelector("#close1")
+const closeConcealer = document.querySelector("#close2")
+const closeLipgloss = document.querySelector("#close3")
 
 
 const baseURL= `http://localhost:1001/api/bronzerproducts`
@@ -79,7 +83,7 @@ const imagefnc = (id) => {
 
 const createBronzerCard = (bronzer) => {
 
-     const bronzerCard = document.createElement('div')
+    const bronzerCard = document.createElement('div')
     bronzerCard.classList.add('bronzer-card')
 
     bronzerCard.innerHTML = `<img onclick= "imagefnc(${bronzer.id})" src = ${bronzer.img} class = 'bronzer-cover-image'/>
@@ -90,6 +94,11 @@ const createBronzerCard = (bronzer) => {
     <button onclick="deleteBronzer(${bronzer.id})">Delete the Product</button> 
     `
     bronzerContainer.appendChild(bronzerCard) 
+    
+
+}
+const deleteBronzerCard = ()=> {
+    bronzerContainer.remove()
 
 }
 
@@ -102,6 +111,8 @@ const displayBronzer = (arr) => {
     }
 }
 
+bronzerbtn.addEventListener("click",getAllBronzers)
+closeBronzer.addEventListener("click",deleteBronzerCard)
 
 //==========================CONCEALER===================
 const concealerCallback = ({data : concealerproducts}) => displayConcelear(concealerproducts)
@@ -131,6 +142,10 @@ const createConcealerCard = (concealer) => {
     <button onclick="deleteConcealer(${concealer.id})">Delete the Product</button>
     `
     concealerContainer.appendChild(concealerCard)
+}
+const deleteConcealerCard= ()=> {
+    concealerContainer.remove()
+
 }
 const submit1 = (evt) =>{
     evt.preventDefault()
@@ -169,10 +184,11 @@ const displayConcelear = (arr) => {
 
 }
 
-bronzerbtn.addEventListener("click",getAllBronzers)
+
 form1.addEventListener('submit', submit)
 form2.addEventListener('submit',submit1)
 concealerbtn.addEventListener("click",getAllConcealers)
+closeConcealer.addEventListener("click",deleteConcealerCard)
 
 //===================LIPGLOSS===================
 const lipglossCallback = ( {data : lipglossproducts }) => displayLipgloss(lipglossproducts)
@@ -197,6 +213,10 @@ const createLipglossCard = (lipgloss) => {
     `
     lipglossContainer.appendChild(lipglossCard)
 }
+const deleteLipglossCard = ()=> {
+    lipglossContainer.remove()
+
+}
 
 const displayLipgloss = (arr) => {
     lipglossContainer.innerHTML = ``
@@ -206,3 +226,4 @@ const displayLipgloss = (arr) => {
 }
 
 lipglossbtn.addEventListener("click",getAllLipgloss)
+closeLipgloss.addEventListener("click",deleteLipglossCard)

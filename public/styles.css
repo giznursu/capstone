@@ -1,0 +1,137 @@
+/* * {
+    background-color: #D6D6D6;
+} */
+
+header {
+    height: 100px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: #4F4F51;
+}
+.maincontainer {
+    position: relative;
+    text-align: center;
+    color: #F58F7C;
+    font-size: xx-large;
+  
+    margin: 1rem;
+    padding: 2rem 2rem;
+    width: 1200px;
+    height: 500px;
+  
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.category-container {
+    display:inline-block;
+
+    padding: 0.5rem 0.5rem;
+    vertical-align:middle;
+    width: 370px;
+    height: 450px;
+    
+
+}
+
+#bronzer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.bronzer-card {
+    background-color:#2C2B30;
+    width: 300px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.bronzer-cover-image{
+    background-color: white;
+    width: 300px; 
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.category{
+    background-color: #2C2B30;
+    color:#F58F7C ;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.brand{
+    background-color: #2C2B30;
+    color:#F58F7C ;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.name{
+    background-color: #2C2B30;
+    color:#F58F7C ;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.color{
+    background-color: #2C2B30;
+    color:#F58F7C ;
+    font-size: 18px;
+    margin: 5px 0;
+}
+#concealer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.concealer-card {
+    background-color: #2C2B30;
+    width: 300px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.concelear-cover-image{
+    background-color: white;
+    width: 300px; 
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+#lipgloss-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.lipgloss-card {
+    background-color: #2C2B30;
+    width: 300px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.lipgloss-cover-image{
+    /* background-color: #FDF5BF; */
+    width: 300px; 
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
