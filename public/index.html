@@ -8,26 +8,28 @@
     
 </head>
 <body>
-    <header>
+    <header style="align-items: baseline;">
         <h1>BEAUTY SPACE</h1>
+        <a id="fav" href="favorites.html" style="position: fixed;right: 50px;">Favorites</a>
     </header>
+    
     <div class="maincontainer">
    
         <div class= "category-container">
             <header>Categories</header>
-            <button id ="first" >BRONZER</button>
-            <button id ="close1">X</button>
+            <div style="display: flex; flex-direction: column; width: fit-content;"> 
+                <button id ="first" style="position: relative;left: 140px;" >BRONZER</button>
+                <button id ="close1" style="position: relative;left: 140px;">X</button>
             
-            <section id="bronzer-container"></section>
-            <section id="add-container"></section>
-            <button id="second">CONCEALER</button>
-            <button id ="close2">X</button>
+            
+                <button id="second" style="position: relative;left: 140px;top: 8px;">CONCEALER</button>
+                <button id ="close2" style="position: relative;left: 140px;top: 10px;">X</button>
         
-            <section id="concealer-container"></section>
-            <button id="third">LIPGLOSS</button>
-            <button id ="close3">X</button>
+            
+                <button id="third" style="position: relative;left: 140px;top:16px">LIPGLOSS</button>
+                <button id ="close3" style="position: relative;left: 140px;top:18px">X</button>
         
-            <section id="lipgloss-container"></section>
+            </div>
 
     
         </div>  
@@ -36,12 +38,28 @@
             <img src="https://cdn.britannica.com/35/222035-131-9FC95B31/makeup-cosmetics.jpg" alt="makeup" style="object-fit: cover; width: 370px;height: 450px; border-radius: 10%;">
             <div class="centered">It's All About You</div>  
         </div>  
-        <div class = "category-container"> 
-            REVIEWS
+        <div class = "category-container" >  
+            <div style="display: flex; flex-direction: column; width: fit-content;">
+                <h1 style="font-size: large;">YOUR OPINIONS MATTER TO US! </h1>
+                <section id ="review-container" ></section>
+                <form class= "NewReviews">
+                    <input 
+                    type="text"
+                    id = "user"
+                    placeholder="Enter your full name">
+                    <input 
+                    type="text"
+                    id = "review"
+                    placeholder="Enter the product name and your review about a product" style="width:300">
+                    <button>Add Review</button>
 
+                </form>
+            </div>
         </div>
     </div>
-  
+    <section id="bronzer-container"></section>
+    <section id="concealer-container"></section>
+    <section id="lipgloss-container"></section>
 
     
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

@@ -1,0 +1,21 @@
+[
+  
+        {
+            "id" : 1,
+            "user" : "gizem",
+            "review" : "sephora concelaer, color 01 , very nice"
+           
+        },
+        {
+            "id" : 2,
+            "user" : "gamze",
+            "review" : "tarte concelear, color 44, kinda good"
+           
+        },
+        {
+            "id" : 3,
+            "user" : "ali",
+            "review" : "dior lipgloss, color 45, not good"
+           
+        }
+]

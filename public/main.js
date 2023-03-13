@@ -1,11 +1,10 @@
 const bronzerContainer = document.querySelector("#bronzer-container")
 const concealerContainer = document.querySelector("#concealer-container")
 const lipglossContainer = document.querySelector("#lipgloss-container")
+const reviewContainer = document.querySelector("#review-container")
+const favContainer = document.querySelector("#favorites-container")
 
 
-const form1 = document.querySelector('.bronzerform')
-const form2 = document.querySelector('.concealerform')
-const form3 = document.querySelector(".lipglossform")
 
 const bronzerbtn = document.querySelector("#first") 
 const concealerbtn = document.querySelector("#second")
@@ -13,18 +12,22 @@ const lipglossbtn = document.querySelector("#third")
 const closeBronzer = document.querySelector("#close1")
 const closeConcealer = document.querySelector("#close2")
 const closeLipgloss = document.querySelector("#close3")
+const favbtn = document.querySelector("#fav")
+
 
 
 const baseURL= `http://localhost:1001/api/bronzerproducts`
 const baseURL1 = `http://localhost:1001/api/concealerproducts`
 const baseURL2 = `http://localhost:1001/api/lipglossproducts`
+const baseURL3 = `http://localhost:1001/api/reviews`
+const baseURL4 =`http://localhost:1001/api/favproducts`
 
 
 //===================BRONZER====================
 
 
 const bronzerCallback = ({ data : bronzerproducts }) => displayBronzer(bronzerproducts)
-
+const favBronzerCallback = ({ data : favproducts}) => displayFavBronzer(favproducts)
 
 const getAllBronzers = () => {
 
@@ -35,36 +38,12 @@ const deleteBronzer = id => {
     axios.delete(`${baseURL}/${id}`).then(bronzerCallback).catch(err=>console.log(err))
     alert("product deleted")
 }
-const createBronzer = body => {
-    axios.post(baseURL,body).then(bronzerCallback).catch(err=>console.log(err))
+const getFavProducts = id =>{
+    axios.get(`${baseURL4}/${id}`).then(favBronzerCallback).catch(errfnc)
 }
 
-const submit = evt => {
-    evt.preventDefault()
-
-    
-    let category= document.querySelector("#category")
-    let brand = document.querySelector("#brand")
-    let name = document.querySelector("#name")
-    let color = document.querySelector("#color")
-    let img = document.querySelector("#img")
 
 
-    let bodyObj = {
-
-        category : category.value,
-        brand : brand.value,
-        name  : name.value,
-        color : color.value,
-        img : img.value
-    }
-    createBronzer(bodyObj)
-    img.value = ''
-    category.value = ''
-    brand.value = ''
-    name.value = ''
-    color.value = ''
-} 
 
 const imagefnc = (id) => {
     arr = ["Suitable for very light skin tones. But you just glow anyway!","Suitable for very light skin tones.By the way, I can't help but say you are stunning!",
@@ -87,21 +66,32 @@ const createBronzerCard = (bronzer) => {
     bronzerCard.classList.add('bronzer-card')
 
     bronzerCard.innerHTML = `<img onclick= "imagefnc(${bronzer.id})" src = ${bronzer.img} class = 'bronzer-cover-image'/>
-    <p class="category">${bronzer.category}</p>
     <p class="name">${bronzer.name}</p>
     <p class="brand">${bronzer.brand}</p>
-    <p class="color">${bronzer.color}</p>
-    <button onclick="deleteBronzer(${bronzer.id})">Delete the Product</button> 
+    <p class="color">color:${bronzer.color}</p>
+    <button id="heart-button">♥</button>
     `
     bronzerContainer.appendChild(bronzerCard) 
+    const deleteBronzerCard = ()=> {
+        bronzerCard.remove()
     
+    }
+    closeBronzer.addEventListener("click",deleteBronzerCard)
+    const favButton = document.querySelector("#heart-button")
+    const addTofavorites = (bronzer) => {
+        const favCard = document.createElement("div")
+        favCard.classList.add("fav-card")
+        favCard.innerHTML = `<img onclick= "imagefnc(${bronzer.id})" src = ${bronzer.img} class = 'bronzer-cover-image'/>
+        <p class="name">${bronzer.name}</p>
+        <p class="brand">${bronzer.brand}</p>
+        <p class="color">color:${bronzer.color}</p>
+        <button onclick="deleteBronzer(${bronzer.id})">Delete the Product</button> 
+        `
+        favContainer.appendChild(favCard) 
+    } 
+    favButton.addEventListener("click",addTofavorites)
 
 }
-const deleteBronzerCard = ()=> {
-    bronzerContainer.remove()
-
-}
-
 
 const displayBronzer = (arr) => {
     bronzerContainer.innerHTML = ``
@@ -110,9 +100,18 @@ const displayBronzer = (arr) => {
     
     }
 }
+const displayFavBronzer = (arr) => {
+    favContainer.innerHTML = ``
+    for (let i = 0; i < arr.length ; i++){
+        createBronzerCard.addTofavorites(arr[i])
+    
+    }
+}
 
 bronzerbtn.addEventListener("click",getAllBronzers)
-closeBronzer.addEventListener("click",deleteBronzerCard)
+favbtn.addEventListener("click",getFavProducts)
+
+
 
 //==========================CONCEALER===================
 const concealerCallback = ({data : concealerproducts}) => displayConcelear(concealerproducts)
@@ -125,55 +124,29 @@ const getAllConcealers = () => {
 const deleteConcealer = id => {
     axios.delete(`${baseURL1}/${id}`).then(concealerCallback).catch(errfnc)
 }
-const createConcealer = body => {
-    axios.post(baseURL1,body).then(concealerCallback).catch(errfnc)
-}
+
 
 const createConcealerCard = (concealer) => {
     const concealerCard = document.createElement('div')
     concealerCard.classList.add('concealer-card')
 
     concealerCard.innerHTML =`<img onclick= "imagefnc(${concealer.id})" src = ${concealer.img} class = 'bronzer-cover-image'/>
-    <p class="category">${concealer.category}</p>
+
     <p class="name">${concealer.name}</p>
     <p class="brand">${concealer.brand}</p>
-    <p class="color">${concealer.color}</p>
+    <p class="color">color:${concealer.color}</p>
    
     <button onclick="deleteConcealer(${concealer.id})">Delete the Product</button>
     `
     concealerContainer.appendChild(concealerCard)
-}
-const deleteConcealerCard= ()=> {
-    concealerContainer.remove()
-
-}
-const submit1 = (evt) =>{
-    evt.preventDefault()
-
+    const deleteConcealerCard= ()=> {
+        concealerCard.remove()
     
-    let category= document.querySelector("#category")
-    let brand = document.querySelector("#brand")
-    let name = document.querySelector("#name")
-    let color = document.querySelector("#color")
-    let img = document.querySelector("#img")
-
-
-    let bodyObj = {
-
-        category : category.value,
-        brand : brand.value,
-        name  : name.value,
-        color : color.value,
-        img : img.value
     }
-    createConcealer(bodyObj)
-    img.value = ''
-    category.value = ''
-    brand.value = ''
-    name.value = ''
-    color.value = ''
-
+    closeConcealer.addEventListener("click",deleteConcealerCard)
 }
+
+
 
 
 const displayConcelear = (arr) => {
@@ -185,10 +158,8 @@ const displayConcelear = (arr) => {
 }
 
 
-form1.addEventListener('submit', submit)
-form2.addEventListener('submit',submit1)
 concealerbtn.addEventListener("click",getAllConcealers)
-closeConcealer.addEventListener("click",deleteConcealerCard)
+
 
 //===================LIPGLOSS===================
 const lipglossCallback = ( {data : lipglossproducts }) => displayLipgloss(lipglossproducts)
@@ -204,19 +175,21 @@ const createLipglossCard = (lipgloss) => {
     const lipglossCard  = document.createElement("div")
     lipglossCard.classList.add("lipgloss-card")
     lipglossCard.innerHTML = `<img onclick= "imagefnc(${lipgloss.id})" src = ${lipgloss.img} class = 'bronzer-cover-image'/>
-    <p class="category">${lipgloss.category}</p>
     <p class="name">${lipgloss.name}</p>
     <p class="brand">${lipgloss.brand}</p>
-    <p class="color">${lipgloss.color}</p>
+    <p class="color">color:${lipgloss.color}</p>
    
     <button onclick="deleteLipgloss(${lipgloss.id})">Delete the Product</button>
     `
     lipglossContainer.appendChild(lipglossCard)
-}
-const deleteLipglossCard = ()=> {
-    lipglossContainer.remove()
+    const deleteLipglossCard = ()=> {
+        lipglossContainer.remove()
+    
+    }
+    closeLipgloss.addEventListener("click",deleteLipglossCard)
 
 }
+
 
 const displayLipgloss = (arr) => {
     lipglossContainer.innerHTML = ``
@@ -226,4 +199,28 @@ const displayLipgloss = (arr) => {
 }
 
 lipglossbtn.addEventListener("click",getAllLipgloss)
-closeLipgloss.addEventListener("click",deleteLipglossCard)
+//=================REVIEWS=====================
+const reviewsCallback = ({ data : reviews }) => displayReviews(reviews)
+
+const getAllReviews = () => axios.get(baseURL3).then(reviewsCallback).catch(errfnc)
+
+const createReviewCard = (rev) => {
+    const reviewCard  = document.createElement("div")
+    reviewCard.classList.add("review-card")
+    reviewCard.innerHTML = `
+    <p class="user" style="font-size:small;">user:${rev.user}</p>
+    <p class="review" style="font-size:small;">review:${rev.review}</p>
+
+    `
+    reviewContainer.appendChild(reviewCard)
+}
+
+
+const displayReviews = (arr) => {
+    reviewContainer.innerHTML = ``
+    for (i = 0; i<arr.length ; i++){
+        createReviewCard(arr[i])
+    }
+}
+
+getAllReviews()

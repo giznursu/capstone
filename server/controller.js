@@ -1,10 +1,12 @@
 let bronzerdata = require("./db.json")
 let concealerdata  = require("./db1.json")
 let lipglossdata = require("./db2.json")
+let reviewsdata = require("./dbreview.json")
 
 console.log(bronzerdata)
 console.log(concealerdata)
 console.log(lipglossdata)
+console.log(reviewsdata)
 
 bronzerId = 9
 concealerId = 11
@@ -23,21 +25,6 @@ module.exports = {
         res.status(200).send(bronzerdata)
 
     }, 
-    createBronzer : (req,res) => {
-        let { category ,brand, name, color,img } = req.body
-        let newBronzer = {
-            id : bronzerId,
-            category,
-            brand,
-            name,
-            color,
-            img
-        }
-        bronzerdata.push(newBronzer)
-        res.status(200).send(bronzerdata)
-        bronzerId++
-
-    },
     getAllConcealers : (req,res) => {
         res.status(200).send(concealerdata)
     },
@@ -47,20 +34,6 @@ module.exports = {
         concealerdata.splice(index,1)
 
         res.status(200).send(concealerdata)
-    },
-    createConcealer : (req,res) => {
-        let { category ,brand, name, color,img } = req.body
-        let newConcelear = {
-            id : bronzerId,
-            category,
-            brand,
-            name,
-            color,
-            img 
-        }
-        concealerdata.push(newConcelear)
-        res.status(200).send(concealerdata)
-        concealerId++ 
     },
     getAllLipgloss : (req,res) => {
         res.status(200).send(lipglossdata)
@@ -72,6 +45,16 @@ module.exports = {
 
         res.status(200).send(lipglossdata)
 
+    },
+    getAllReviews : (req,res) => {
+        res.status(200).send(reviewsdata)
+    },
+    getFavProducts :(req,res) => {
+        let { id } = req.params
+        let index = bronzerdata.findIndex(bronzerdata => bronzerdata.id === +id)
+        favBronzer = bronzerdata.slice(index,index+1)
+        res.status(200).send(favBronzer)
     }
+
 
 }
