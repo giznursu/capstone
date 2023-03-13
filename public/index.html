@@ -9,25 +9,25 @@
 </head>
 <body>
     <header style="align-items: baseline;">
-        <h1>BEAUTY SPACE</h1>
-        <a id="fav" href="favorites.html" style="position: fixed;right: 50px;">Favorites</a>
+        <h1 style="font-size:300%; animation-name: example; animation-duration:10s; animation-iteration-count: infinite;"  >BEAUTY SPACE</h1>
+        
     </header>
     
     <div class="maincontainer">
    
-        <div class= "category-container">
-            <header>Categories</header>
-            <div style="display: flex; flex-direction: column; width: fit-content;"> 
-                <button id ="first" style="position: relative;left: 140px;" >BRONZER</button>
-                <button id ="close1" style="position: relative;left: 140px;">X</button>
+        <div class= "category-container" style="background-color: #D6D6D6;border-radius: 50%;height: 300px;">
+            <header style="font-style: oblique;font-size: x-large;background-color:transparent;color: #2C2B30;">Categories</header>
+            <div style="display: flex; flex-direction: column; width: fit-content;background-color:transparent;"> 
+                <button id ="first" style="position: relative;left: 140px; background-color: #D6D6D6;" >BRONZER</button>
+                <button id ="close1" style="position: relative;left: 140px;width:fit-content;">X</button>
             
             
-                <button id="second" style="position: relative;left: 140px;top: 8px;">CONCEALER</button>
-                <button id ="close2" style="position: relative;left: 140px;top: 10px;">X</button>
+                <button id="second" style="position: relative;left: 140px;top: 8px;background-color: #D6D6D6;">CONCEALER</button>
+                <button id ="close2" style="position: relative;left: 140px;top: 10px; width:fit-content;">X</button>
         
             
-                <button id="third" style="position: relative;left: 140px;top:16px">LIPGLOSS</button>
-                <button id ="close3" style="position: relative;left: 140px;top:18px">X</button>
+                <button id="third" style="position: relative;left: 140px;top:16px;background-color: #D6D6D6;">LIPGLOSS</button>
+                <button id ="close3" style="position: relative;left: 140px;top:18px; width:fit-content;">X</button>
         
             </div>
 
@@ -36,22 +36,25 @@
         <div class = "category-container">
 
             <img src="https://cdn.britannica.com/35/222035-131-9FC95B31/makeup-cosmetics.jpg" alt="makeup" style="object-fit: cover; width: 370px;height: 450px; border-radius: 10%;">
-            <div class="centered">It's All About You</div>  
+            <div class="centered" style="background-color:transparent;color: #2C2B30;animation-name: example-2;animation-duration: 5s;animation-iteration-count: infinite;">It's All About You</div>  
         </div>  
-        <div class = "category-container" >  
+        <div class = "category-container">  
             <div style="display: flex; flex-direction: column; width: fit-content;">
                 <h1 style="font-size: large;">YOUR OPINIONS MATTER TO US! </h1>
-                <section id ="review-container" ></section>
+                <section id ="review-container" style="border: 100px;"></section>
+                <br>
                 <form class= "NewReviews">
                     <input 
                     type="text"
                     id = "user"
-                    placeholder="Enter your full name">
+                    style="border-color: #F58F7C;"
+                    placeholder="Enter your user name">
                     <input 
                     type="text"
                     id = "review"
-                    placeholder="Enter the product name and your review about a product" style="width:300">
-                    <button>Add Review</button>
+                    style="border-color: #F58F7C;"
+                    placeholder="Enter the product name and your review about a product">
+                    <button style = "background-color:#F2C4CE;"id="add">Add Review</button>
 
                 </form>
             </div>
@@ -60,6 +63,8 @@
     <section id="bronzer-container"></section>
     <section id="concealer-container"></section>
     <section id="lipgloss-container"></section>
+
+    <section id ="heart-container"></section>
 
     
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
