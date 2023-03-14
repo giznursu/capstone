@@ -95,9 +95,9 @@ const createBronzerCard = (bronzer) => {
     bronzerCard.classList.add('bronzer-card')
 
     bronzerCard.innerHTML = `<img onclick= "imagefnc(${bronzer.id})" src = ${bronzer.img} class = 'bronzer-cover-image'/>
-    <p class="name" style = "background-color:#F2C4CE;">${bronzer.name}</p>
-    <p class="brand" style = "background-color:#F2C4CE;">${bronzer.brand}</p>
-    <p class="color" style = "background-color:#F2C4CE;">color:${bronzer.color}</p>
+    <p class="name" style = "background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);">${bronzer.name}</p>
+    <p class="brand" style = "background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);">${bronzer.brand}</p>
+    <p class="color" style = "background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);">color: ${bronzer.color}</p>
 
     <button style = "background-color:#F2C4CE;" onclick="goWebsite(${bronzer.id})">Buy it!</button>
     `
@@ -200,9 +200,9 @@ const createConcealerCard = (concealer) => {
 
     concealerCard.innerHTML =`<img onclick= "imagefnc1(${concealer.id})" src = ${concealer.img} class = 'bronzer-cover-image'/>
 
-    <p class="name" style = "background-color:#F2C4CE;">${concealer.name}</p>
-    <p class="brand" style = "background-color:#F2C4CE;">${concealer.brand}</p>
-    <p class="color" style = "background-color:#F2C4CE;">color:${concealer.color}</p>
+    <p class="name" style = "background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);text-align:center;">${concealer.name}</p>
+    <p class="brand" style = "background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);">${concealer.brand}</p>
+    <p class="color" style = "background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);">color: ${concealer.color}</p>
     <button style = "background-color:#F2C4CE;" onclick="goWebsite1(${concealer.id})">Buy it!</button>
     `
     concealerContainer.appendChild(concealerCard)
@@ -295,14 +295,14 @@ const createLipglossCard = (lipgloss) => {
     const lipglossCard  = document.createElement("div")
     lipglossCard.classList.add("lipgloss-card")
     lipglossCard.innerHTML = `<img onclick= "imagefnc2(${lipgloss.id})" src = ${lipgloss.img} class = 'bronzer-cover-image'/>
-    <p class="name" style = "background-color:tarensparent">${lipgloss.name}</p>
-    <p class="brand" style = "background-color:tarensparent;">${lipgloss.brand}</p>
-    <p class="color" style = "background-color:tarensparent;">color:${lipgloss.color}</p>
+    <p class="name" style = "background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);text-align:center">${lipgloss.name}</p>
+    <p class="brand" style = "background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);;">${lipgloss.brand}</p>
+    <p class="color" style = "background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);">color: ${lipgloss.color}</p>
     <button style = "background-color:#F2C4CE;" onclick="goWebsite2(${lipgloss.id})">Buy it!</button>
     `
     lipglossContainer.appendChild(lipglossCard)
     const deleteLipglossCard = ()=> {
-        lipglossContainer.remove()
+        lipglossCard.remove()
     
     }
     closeLipgloss.addEventListener("click",deleteLipglossCard)
@@ -318,6 +318,8 @@ const displayLipgloss = (arr) => {
 }
 
 lipglossbtn.addEventListener("click",getAllLipgloss)
+
+
 //=================REVIEWS=====================
 const form = document.querySelector('form')
 const reviewsCallback = ({ data : reviews }) => displayReviews(reviews)
@@ -330,11 +332,12 @@ const createReviewCard = (rev) => {
     const reviewCard  = document.createElement("div")
     reviewCard.classList.add("review-card")
     reviewCard.innerHTML = `
-    <p class="olduser" style="font-size:large; background-color:transparent">User: ${rev.user}</p>
-    <p class="oldreview" style="font-size:medium;background-color:transparent">Review: ${rev.review}</p>
+    <p class="olduser" style="font-size:large;font-style:oblique; background-color:transparent">User: ${rev.user}</p>
+    <p class="oldreview" style="font-size:large;font-style:oblique;background-color:black;width:fit-content">${rev.review}</p>
     <button  class="olddelete" style="background-color:rgb(249, 234, 255)" onclick="deleteReview(${rev.id})">delete</button>
     
     `
+    
     reviewContainer.appendChild(reviewCard)
 }
 const submit = (evt) => {

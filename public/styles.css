@@ -11,6 +11,10 @@ header {
     color: #D6D6D6;
 
 }
+h1{
+    display: flex;
+    align-items: center;
+}
 
 @keyframes example {
 
@@ -18,8 +22,8 @@ header {
     100%  {color: #D6D6D6;}
   }
 @keyframes example-2 {
-    0%   {top: 10%;}
-    100% {top: 80%;}
+    0%   {top: 15%;}
+    100% {top: 40%;}
     
 }
 .maincontainer {
@@ -32,7 +36,6 @@ header {
     width: 1200px;
     height: 500px;
     position: relative;
-    
   
   }
   .centered {
@@ -40,7 +43,12 @@ header {
     transform: translate(-50%, -50%);
     font-style: oblique;
 }
+.bottom{
+    position: absolute;
+    bottom: 100px;
+    left: 65px;
 
+}
 .category-container {
     display:inline-block;
     padding: 0.5rem 0.5rem;
@@ -75,30 +83,28 @@ header {
     border:#D6D6D6 dotted 1px;
     background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
     width: 600px;
-    height: 130px;
+    height: 140px;
     right: 5%;
     display: flex;
     flex-direction: column;
 
 }
 .olduser{
-    color: #D6D6D6;
+    color: #eedcc8;
     background-color: #2C2B30;
     justify-items: center;
     align-items: center;
 }
 .oldreview{
-    color: #D6D6D6;
-    background-color: #2C2B30;
+    color:#eedcc8;
     justify-items: center;
     align-items: center;
 }
 #olddelete{
-    color:#F2C4CE;
+    color:#eedcc8;
     font-size: small;
     display: flex;
     width: fit-content;
-
 
 }
 
@@ -110,7 +116,6 @@ header {
 }
 .bronzer-card {
     background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
-    
     width: 300px;
     margin: 20px; 
     display: flex;
@@ -121,33 +126,33 @@ header {
     border-top-right-radius: 15px;
 }
 .bronzer-cover-image{
-    background-color: white;
+    background-color:#f3eeee;
     width: 300px; 
     height: 300px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 .category{
-    background-color: #2C2B30;
-    color:#F58F7C ;
+    background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
+    color:#D6D6D6 ;
     font-size: 18px;
     margin: 5px 0;
 }
 .brand{
-    background-color: #2C2B30;
-    color:#F58F7C ;
+    background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
+    color:#D6D6D6 ;
     font-size: 18px;
     margin: 5px 0;
 }
 .name{
-    background-color: #2C2B30;
-    color:#F58F7C ;
+    background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
+    color:#D6D6D6 ;
     font-size: 18px;
     margin: 5px 0;
 }
 .color{
-    background-color: #2C2B30;
-    color:#F58F7C ;
+    background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
+    color:#D6D6D6 ;
     font-size: 18px;
     margin: 5px 0;
 }
@@ -160,7 +165,7 @@ header {
 }
 
 .concealer-card {
-    background-color: #F2C4CE;
+    background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
     width: 300px;
     margin: 20px; 
     display: flex;
@@ -184,7 +189,7 @@ header {
     align-items: center;
 }
 .lipgloss-card {
-    background-color: #F2C4CE;
+    background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
     width: 300px;
     margin: 20px; 
     display: flex;
@@ -195,7 +200,7 @@ header {
     border-top-right-radius: 15px;
 }
 .lipgloss-cover-image{
-    /* background-color: #FDF5BF; */
+    background-color: #FDF5BF;
     width: 300px; 
     height: 300px;
     border-top-left-radius: 12px;
