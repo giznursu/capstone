@@ -324,6 +324,7 @@ lipglossbtn.addEventListener("click",getAllLipgloss)
 const form = document.querySelector('form')
 const reviewsCallback = ({ data : reviews }) => displayReviews(reviews)
 
+
 const getAllReviews = () => axios.get(baseURL3).then(reviewsCallback).catch(errfnc)
 const createReview = body => axios.post(baseURL3,body).then(reviewsCallback).catch(errfnc)
 const deleteReview = id => axios.delete(`${baseURL3}/${id}`).then(reviewsCallback).catch(errfnc)
@@ -351,6 +352,7 @@ const submit = (evt) => {
     createReview(bodyObj)
     user.value = ''
     review.value = ''
+
 }
 
 const displayReviews = (arr) => {
