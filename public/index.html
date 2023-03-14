@@ -8,63 +8,60 @@
     
 </head>
 <body>
-    <p style="background-image: url(https://cdn.mos.cms.futurecdn.net/4MLyNZ66GSMUp7z49Q8k3K.jpg);"></p>
     <header >
         <h1 style="font-size:300%; animation-name: example; animation-duration:10s; animation-iteration-count: infinite; background-color: transparent;" >BEAUTY SPACE</h1>
         
     </header>
+    <div style="display:flex; flex-direction: column; justify-content:center;align-items: center;">  
+    <p style="font-style: oblique;font-size: x-large;background-color:transparent;color:#2C2B30;">Categories:</p>
+        
+        <button id ="first" style="width: 200px; border-radius: 15%; background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);color: #F2C4CE;" >BRONZER</button>
+        <section id="bronzer-container"></section>
+        <button id ="close1" style="left: 140px;background-color: transparent; width:fit-content;">🚀</button>
+    
+        
+    
+    
+        <button id="second" style="width: 200px;left: 140px;top: 8px;border-radius: 15%; background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);color: #F2C4CE;">CONCEALER</button>
+        <section id="concealer-container"></section>
+        <button id ="close2" style="left: 160px;top: 8px; background-color:transparent; width:fit-content;">🚀</button>
+        
+    
+        <button id="third" style="width: 200px;left: 140px;top:16px;border-radius: 15%;background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);color: #F2C4CE;">LIPGLOSS</button>
+        <section id="lipgloss-container"></section>
+        <button id ="close3" style="left: 160px;top:14px;background-color: transparent; width:fit-content;">🚀</button>
+    </div>   
     
     <div class="maincontainer">
-   
-        <div class= "category-container" >
-            <p style="font-style: oblique;font-size: x-large;background-color:transparent;color:#D6D6D6;">Categories</p>
-            <div style="display: flex; flex-direction: column; width: fit-content;background-color:transparent;"> 
-                
-                    <button id ="first" style="position: relative;left: 140px;border-radius: 15%; background-color: #D6D6D6;" >BRONZER</button>
-                    <button id ="close1" style="position: relative;left: 140px;background-color: #D6D6D6; width:fit-content;">X</button>
-            
-            
-                <button id="second" style="position: relative;left: 140px;top: 8px;border-radius: 15%;background-color: #D6D6D6;">CONCEALER</button>
-                <button id ="close2" style="position: relative;left: 140px;top: 10px; background-color: #D6D6D6; width:fit-content;">X</button>
-        
-            
-                <button id="third" style="position: relative;left: 140px;top:16px;border-radius: 15%;background-color: #D6D6D6;">LIPGLOSS</button>
-                <button id ="close3" style="position: relative;left: 140px;top:18px;background-color: #D6D6D6; width:fit-content;">X</button>
-        
-            </div>
 
-    
-        </div>  
         <div class = "category-container">
 
-            <img src="https://cdn.britannica.com/35/222035-131-9FC95B31/makeup-cosmetics.jpg" alt="makeup" style="object-fit: cover; width: 370px;height: 450px; border-radius: 10%;">
-            <div class="centered" style="background-color:transparent;color: #2C2B30;animation-name: example-2;animation-duration: 5s;animation-iteration-count: infinite;">It's All About You</div>  
+            <img src="https://scitechdaily.com/images/New-Laser-Technique-Identifies-the-Makeup-of-Space-Debris.jpg" alt="makeup" style="object-fit: cover; width: 500px;height: 500px; border-radius: 10%;">
+            <div class="centered" style="background-color:transparent; color: #912E54;animation-name: example-2;animation-duration: 5s;animation-iteration-count: infinite;left: 22%;font-size: 200%;">It's All About You</div>  
         </div>  
-        <div class = "category-container">  
-            <div style="display: flex; flex-direction: column; width: fit-content;justify-content: flex-end;">
-                <h1 style="font-size: large;text-align: center; justify-content: flex-end">YOUR OPINIONS MATTER TO US! </h1>
-                <section id ="review-container" style="border: 300px;"></section>
-
-                <form class= "NewReviews">
-                    <input 
-                    type="text"
-                    id = "user"
-                    style="border-color: #F58F7C;"
-                    placeholder="Enter your user name">
-                    <input 
-                    type="text"
-                    id = "review"
-                    style="border-color: #F58F7C;"
-                    placeholder="Enter the product name and your review about a product">
-                    <button style = "background-color:#F2C4CE;"id="add">Add Review</button>
-
-                </form>
+            <div class = "category-container">  
+                <h1 style="font-size: medium;text-align: center;color: #2C2B30;">YOUR OPINIONS MATTER TO US! </h1>
+                <section id ="review-container" style="width: 500px;"></section>
+                
             </div>
-        </div>
+        
     </div>
-    <section id="bronzer-container"></section>
-    <section id="concealer-container"></section>
-    <section id="lipgloss-container"></section>
+    <form class= "NewReviews">
+        <div style="display: flex;flex-direction: column; justify-content: center;align-items: center;">
+        <input 
+        type="text"
+        id = "user"
+        style="border-color:#2C2B30 1px; font-weight: bold; width: 170px; height: 20px;"
+        placeholder="Enter your user name...">
+        <input 
+        type="text"
+        id = "review"
+        style="border-color:#2C2B30 1px;font-weight: bold;width: 600px;height: 70px;"
+        placeholder="Enter your review about a product...">
+        <button style = "background-color:#F2C4CE;"id="add">Add Review</button>
+        </div>
+ 
+
 
 
     

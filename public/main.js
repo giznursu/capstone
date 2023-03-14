@@ -295,9 +295,9 @@ const createLipglossCard = (lipgloss) => {
     const lipglossCard  = document.createElement("div")
     lipglossCard.classList.add("lipgloss-card")
     lipglossCard.innerHTML = `<img onclick= "imagefnc2(${lipgloss.id})" src = ${lipgloss.img} class = 'bronzer-cover-image'/>
-    <p class="name" style = "background-color:#F2C4CE;">${lipgloss.name}</p>
-    <p class="brand" style = "background-color:#F2C4CE;">${lipgloss.brand}</p>
-    <p class="color" style = "background-color:#F2C4CE;">color:${lipgloss.color}</p>
+    <p class="name" style = "background-color:tarensparent">${lipgloss.name}</p>
+    <p class="brand" style = "background-color:tarensparent;">${lipgloss.brand}</p>
+    <p class="color" style = "background-color:tarensparent;">color:${lipgloss.color}</p>
     <button style = "background-color:#F2C4CE;" onclick="goWebsite2(${lipgloss.id})">Buy it!</button>
     `
     lipglossContainer.appendChild(lipglossCard)
@@ -330,9 +330,9 @@ const createReviewCard = (rev) => {
     const reviewCard  = document.createElement("div")
     reviewCard.classList.add("review-card")
     reviewCard.innerHTML = `
-    <p class="olduser" style="font-size:small;">User: ${rev.user}</p>
-    <p class="oldreview" style="font-size:small;">Review: ${rev.review}</p>
-    <button  class="olddelete" style="background-color:#F2C4CE" onclick="deleteReview(${rev.id})">delete</button>
+    <p class="olduser" style="font-size:large; background-color:transparent">User: ${rev.user}</p>
+    <p class="oldreview" style="font-size:medium;background-color:transparent">Review: ${rev.review}</p>
+    <button  class="olddelete" style="background-color:rgb(249, 234, 255)" onclick="deleteReview(${rev.id})">delete</button>
     
     `
     reviewContainer.appendChild(reviewCard)

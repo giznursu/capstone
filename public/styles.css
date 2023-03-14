@@ -1,22 +1,21 @@
 * {
-    background-color:#D6D6D6 ;
+    background-color:rgb(249, 234, 255) ;
 }
 
 header {
-    background-image:url(https://cdn.mos.cms.futurecdn.net/4MLyNZ66GSMUp7z49Q8k3K.jpg);
+    background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
     height: 100px; 
     display: flex; 
     justify-content:space-around; 
     align-items:start;
     color: #D6D6D6;
-    border-radius: 50%;
+
 }
 
 @keyframes example {
-    0%   {color: #D6D6D6;}
-    25%  {color: #F2C4CE;} 
-    50%  {color: #4F4F51;}
-    100% {color: #D6D6D6;}
+
+    0%  {color: #F2C4CE;} 
+    100%  {color: #D6D6D6;}
   }
 @keyframes example-2 {
     0%   {top: 10%;}
@@ -24,34 +23,34 @@ header {
     
 }
 .maincontainer {
-    position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     color: #F58F7C;
     font-size: xx-large;
     margin: 1rem;
     padding: 2rem 2rem;
     width: 1200px;
     height: 500px;
+    position: relative;
     
   
   }
   .centered {
     position: absolute;
-    top: 10%;
-    left: 50%;
     transform: translate(-50%, -50%);
     font-style: oblique;
-
 }
 
 .category-container {
     display:inline-block;
     padding: 0.5rem 0.5rem;
     vertical-align:middle;
-    width: 370px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     border-color: #D6D6D6;
-    justify-content: space-between;
+    justify-content: center;
+    align-items:center ;
+    
 
 }
 #user{
@@ -74,32 +73,32 @@ header {
 }
 .review-card{
     border:#D6D6D6 dotted 1px;
-    border-radius: 7%;
-    background-color:#2C2B30;
-    font-weight:100;
-    width: 380px;
-    height: 100px;
+    background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
+    width: 600px;
+    height: 130px;
     right: 5%;
+    display: flex;
+    flex-direction: column;
 
 }
 .olduser{
     color: #D6D6D6;
     background-color: #2C2B30;
-
-    display: flex;
-    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
 }
 .oldreview{
     color: #D6D6D6;
     background-color: #2C2B30;
-    display: flex;
-    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
 }
 #olddelete{
     color:#F2C4CE;
+    font-size: small;
     display: flex;
-    justify-content:flex-end;
-    text-align:right;
+    width: fit-content;
+
 
 }
 
@@ -110,7 +109,7 @@ header {
     align-items: center;
 }
 .bronzer-card {
-    background-color:#F2C4CE;
+    background-image:url(https://www.si.edu/sites/default/files/styles/social_media/public/blog/crab_nebula.jpg?itok=l-fZ5PRC);
     
     width: 300px;
     margin: 20px; 
