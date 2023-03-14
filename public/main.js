@@ -332,8 +332,8 @@ const createReviewCard = (rev) => {
     reviewCard.innerHTML = `
     <p class="olduser" style="font-size:small;">User: ${rev.user}</p>
     <p class="oldreview" style="font-size:small;">Review: ${rev.review}</p>
-    <button style = ;" class="olddelete" style="background-color:#D6D6D6" onclick="deleteReview(${rev.id})">delete</button>
-
+    <button  class="olddelete" style="background-color:#F2C4CE" onclick="deleteReview(${rev.id})">delete</button>
+    
     `
     reviewContainer.appendChild(reviewCard)
 }

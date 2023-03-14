@@ -1,14 +1,17 @@
 * {
-    background-color: #2C2B30;
+    background-color:#D6D6D6 ;
 }
 
 header {
+    background-image:url(https://cdn.mos.cms.futurecdn.net/4MLyNZ66GSMUp7z49Q8k3K.jpg);
     height: 100px; 
     display: flex; 
-    justify-content: center; 
-    align-items: center;
+    justify-content:space-around; 
+    align-items:start;
     color: #D6D6D6;
+    border-radius: 50%;
 }
+
 @keyframes example {
     0%   {color: #D6D6D6;}
     25%  {color: #F2C4CE;} 
@@ -25,11 +28,11 @@ header {
     text-align: center;
     color: #F58F7C;
     font-size: xx-large;
-  
     margin: 1rem;
     padding: 2rem 2rem;
     width: 1200px;
     height: 500px;
+    
   
   }
   .centered {
@@ -47,7 +50,8 @@ header {
     vertical-align:middle;
     width: 370px;
     height: 450px;
-    
+    border-color: #D6D6D6;
+    justify-content: space-between;
 
 }
 #user{
@@ -73,8 +77,10 @@ header {
     border-radius: 7%;
     background-color:#2C2B30;
     font-weight:100;
-    width: 350px;
+    width: 380px;
     height: 100px;
+    right: 5%;
+
 }
 .olduser{
     color: #D6D6D6;
@@ -90,8 +96,7 @@ header {
     justify-content: flex-start;
 }
 #olddelete{
-    color: #D6D6D6;
-    background-color: #2C2B30;
+    color:#F2C4CE;
     display: flex;
     justify-content:flex-end;
     text-align:right;
@@ -197,3 +202,4 @@ header {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+

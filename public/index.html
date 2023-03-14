@@ -8,26 +8,28 @@
     
 </head>
 <body>
-    <header style="align-items: baseline;">
-        <h1 style="font-size:300%; animation-name: example; animation-duration:10s; animation-iteration-count: infinite;"  >BEAUTY SPACE</h1>
+    <p style="background-image: url(https://cdn.mos.cms.futurecdn.net/4MLyNZ66GSMUp7z49Q8k3K.jpg);"></p>
+    <header >
+        <h1 style="font-size:300%; animation-name: example; animation-duration:10s; animation-iteration-count: infinite; background-color: transparent;" >BEAUTY SPACE</h1>
         
     </header>
     
     <div class="maincontainer">
    
-        <div class= "category-container" style="background-color: #D6D6D6;border-radius: 50%;height: 300px;">
-            <header style="font-style: oblique;font-size: x-large;background-color:transparent;color: #2C2B30;">Categories</header>
+        <div class= "category-container" >
+            <p style="font-style: oblique;font-size: x-large;background-color:transparent;color:#D6D6D6;">Categories</p>
             <div style="display: flex; flex-direction: column; width: fit-content;background-color:transparent;"> 
-                <button id ="first" style="position: relative;left: 140px; background-color: #D6D6D6;" >BRONZER</button>
-                <button id ="close1" style="position: relative;left: 140px;width:fit-content;">X</button>
+                
+                    <button id ="first" style="position: relative;left: 140px;border-radius: 15%; background-color: #D6D6D6;" >BRONZER</button>
+                    <button id ="close1" style="position: relative;left: 140px;background-color: #D6D6D6; width:fit-content;">X</button>
             
             
-                <button id="second" style="position: relative;left: 140px;top: 8px;background-color: #D6D6D6;">CONCEALER</button>
-                <button id ="close2" style="position: relative;left: 140px;top: 10px; width:fit-content;">X</button>
+                <button id="second" style="position: relative;left: 140px;top: 8px;border-radius: 15%;background-color: #D6D6D6;">CONCEALER</button>
+                <button id ="close2" style="position: relative;left: 140px;top: 10px; background-color: #D6D6D6; width:fit-content;">X</button>
         
             
-                <button id="third" style="position: relative;left: 140px;top:16px;background-color: #D6D6D6;">LIPGLOSS</button>
-                <button id ="close3" style="position: relative;left: 140px;top:18px; width:fit-content;">X</button>
+                <button id="third" style="position: relative;left: 140px;top:16px;border-radius: 15%;background-color: #D6D6D6;">LIPGLOSS</button>
+                <button id ="close3" style="position: relative;left: 140px;top:18px;background-color: #D6D6D6; width:fit-content;">X</button>
         
             </div>
 
@@ -39,10 +41,10 @@
             <div class="centered" style="background-color:transparent;color: #2C2B30;animation-name: example-2;animation-duration: 5s;animation-iteration-count: infinite;">It's All About You</div>  
         </div>  
         <div class = "category-container">  
-            <div style="display: flex; flex-direction: column; width: fit-content;">
-                <h1 style="font-size: large;">YOUR OPINIONS MATTER TO US! </h1>
-                <section id ="review-container" style="border: 100px;"></section>
-                <br>
+            <div style="display: flex; flex-direction: column; width: fit-content;justify-content: flex-end;">
+                <h1 style="font-size: large;text-align: center; justify-content: flex-end">YOUR OPINIONS MATTER TO US! </h1>
+                <section id ="review-container" style="border: 300px;"></section>
+
                 <form class= "NewReviews">
                     <input 
                     type="text"
@@ -64,7 +66,6 @@
     <section id="concealer-container"></section>
     <section id="lipgloss-container"></section>
 
-    <section id ="heart-container"></section>
 
     
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
