@@ -100,13 +100,6 @@ h1{
     justify-items: center;
     align-items: center;
 }
-#olddelete{
-    color:#eedcc8;
-    font-size: small;
-    display: flex;
-    width: fit-content;
-
-}
 
 #bronzer-container{
     display: flex;

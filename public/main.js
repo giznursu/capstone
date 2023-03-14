@@ -336,7 +336,6 @@ const createReviewCard = (rev) => {
     <p class="olduser" style="font-size:large;font-style:oblique; background-color:transparent">User: ${rev.user}</p>
     <p class="oldreview" style="font-size:large;font-style:oblique;background-color:black;width:fit-content">${rev.review}</p>
     <button  class="olddelete" style="background-color:rgb(249, 234, 255)" onclick="deleteReview(${rev.id})">delete</button>
-    
     `
     
     reviewContainer.appendChild(reviewCard)
@@ -357,9 +356,31 @@ const submit = (evt) => {
 
 const displayReviews = (arr) => {
     reviewContainer.innerHTML = ``
+    var index = Math.floor(arr.length / 3)
     for (i = 0; i<arr.length ; i++){
-        createReviewCard(arr[i])
+        if (arr.length % 3 === 0 && index===1){
+            createReviewCard(arr[i])
+        }
+        else if(arr.length % 3 === 1 && index===1){
+            createReviewCard(arr[i+1])
+        }
+        else if(arr.length % 3===2 && index===1){
+            createReviewCard(arr[i+2])
+        }
+        else if(arr.length % 3 === 0 && index===2){
+            createReviewCard(arr[i+3])
+            
+        }
+        else if(arr.length % 3 === 1 && index===2){
+            createReviewCard(arr[i+4])
+        }
+        else if(arr.length % 3 === 3 && index===2){
+            createReviewCard(arr[i+5])
+    
+        }
+    
     }
+
 }
 
 form.addEventListener("submit",submit)
