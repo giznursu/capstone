@@ -60,27 +60,27 @@ const goWebsite = (id) => {
         open("https://www.dior.com/en_us/beauty/products/Y0216000_C021600007-dior-forever-natural-bronze-healthy-glow-bronzing-powder-95-mineral-origin-pigments?gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPZbnexnBSu6P0xshmGv_xLXgQNvHn94oh89F8FpgGegPxYZm8k09HIaAoJBEALw_wcB&gclsrc=aw.ds")
         
     }
-    else if (id = 3){
+    else if (id === 3){
         open("https://www.dior.com/en_us/beauty/products/Y0216000_C021600007-dior-forever-natural-bronze-healthy-glow-bronzing-powder-95-mineral-origin-pigments?gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPZbnexnBSu6P0xshmGv_xLXgQNvHn94oh89F8FpgGegPxYZm8k09HIaAoJBEALw_wcB&gclsrc=aw.ds" )
         
     }
-    else if (id = 4){
+    else if (id === 4){
         open("https://www.dior.com/en_us/beauty/products/Y0216000_C021600007-dior-forever-natural-bronze-healthy-glow-bronzing-powder-95-mineral-origin-pigments?gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPZbnexnBSu6P0xshmGv_xLXgQNvHn94oh89F8FpgGegPxYZm8k09HIaAoJBEALw_wcB&gclsrc=aw.ds" )
         
     }
-    else if (id = 5){
+    else if (id === 5){
         open("https://www.dior.com/en_us/beauty/products/Y0216000_C021600007-dior-forever-natural-bronze-healthy-glow-bronzing-powder-95-mineral-origin-pigments?gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPZbnexnBSu6P0xshmGv_xLXgQNvHn94oh89F8FpgGegPxYZm8k09HIaAoJBEALw_wcB&gclsrc=aw.ds" )
        
     }
-    else if (id = 6){
+    else if (id === 6){
         open("https://fentybeauty.com/products/sun-stalkr-instant-warmth-bronzer-inda-sun" )
        
     }
-    else if (id = 7){
+    else if (id === 7){
         open("https://fentybeauty.com/products/sun-stalkr-instant-warmth-bronzer-shady-biz")
        
     }
-    else if (id = 8){
+    else if (id === 8){
         open("https://fentybeauty.com/products/sun-stalkr-instant-warmth-bronzer-caramel-cutie")
        
     }
