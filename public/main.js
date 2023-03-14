@@ -378,6 +378,9 @@ const displayReviews = (arr) => {
             createReviewCard(arr[i+5])
     
         }
+        else{
+            createReviewCard(arr[i])
+        }
     
     }
 
