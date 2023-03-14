@@ -18,10 +18,10 @@ const favbtn = document.querySelector("#fav")
 
 
 
-const baseURL= `http://localhost:1001/api/bronzerproducts`
-const baseURL1 = `http://localhost:1001/api/concealerproducts`
-const baseURL2 = `http://localhost:1001/api/lipglossproducts`
-const baseURL3 = `http://localhost:1001/api/reviews`
+const baseURL= `/api/bronzerproducts`
+const baseURL1 = `/api/concealerproducts`
+const baseURL2 = `/api/lipglossproducts`
+const baseURL3 = `/api/reviews`
 
 
 
